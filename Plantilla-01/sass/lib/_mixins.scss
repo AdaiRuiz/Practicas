@@ -1,0 +1,9 @@
+/*WWWWWWWWWWWWWWWWWWWWWW
+         $MIXINS
+WWWWWWWWWWWWWWWWWWWWWW*/
+
+@mixin responsive($width){
+    @media only screen and (min-width:$width){  
+      @content;   
+    }  
+  }

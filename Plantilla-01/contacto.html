@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        <!-- HTML Meta Tags -->
+        <title></title>
+        <meta name="description" content="">
+    
+        <!-- Google / Search Engine Tags -->
+        <meta itemprop="name" content="">
+        <meta itemprop="description" content="">
+        <meta itemprop="image" content="">
+    
+        <!-- Facebook Meta Tags -->
+        <meta property="og:url" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="">
+        <meta property="og:image" content="">
+    
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:image" content="">
+    
+    
+        <!-- Link = Font awesome  -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    
+        <!-- Link = CSS -->
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+            
+<body>
+
+    <!-- _+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_ -->
+    <!-- MMWWMWMWMWMWMWMMWMWMWMWMWMW -> START OF THE PAGE <- MWMWMWMWMWMWMWMWMWMWM -->
+    <header>
+        <nav class="head">
+            <!-- Logotype Box -->
+            <div class="head__logobox">
+                <!-- Logo -->
+                <img class="google-img" src="../Plantilla-01/img/google.png" alt="Google">
+            </div>
+            
+            <!-- Menu header -->
+            <div class="head__menu">
+                <!-- Sin Checkox no hay un clic -->
+                <input id="activar" name="activar" type="checkbox">
+                <!-- El Label esta enlazado al input a traves de su for>name -->
+                <label class="inputlabel" for="activar">
+                    <i class="fas fa-align-justify"></i>
+                </label>
+                <!-- List Links -->
+                <ul class="head__menu__list">
+                    <!-- List Link -->
+                    <li class="head__menu__list__link"></li>
+                        <a href="#">Trabajos</a>
+                    <!-- List Link -->
+                    <li class="head__menu__list__link"></li>
+                        <a href="#">Servicios</a>
+                    <!-- List Link -->
+                    <li class="head__menu__list__link"></li>
+                        <a href="contacto.html">Contacto</a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- _+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_+*+_ -->
+    <!-- MMWWMWMWMWMWMWMMWMWMMWMWMW -> CONTAIN OF THE PAGE <- MWMWMWMWWMWMWMWMWMWM -->    
+    <section class="contact">
+        <!-- Contact's Title -->
+        <h1 class="contact__title">
+            Contactar
+        </h1>
+
+        <!-- Contact Form -->
+        <div class="contact">
+            <!-- Name -->
+            <label for="name">Nombre</label>
+            <input type="text" name="name" required pattern="[A-Z]">
+
+            <!-- DNI -->
+            <label for="dni">DNI</label>
+            <input type="text" required name="dni" pattern="[]">
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" required name="email">
+
+            <!-- Telefone -->
+            <input type="tel" required name="tel" pattern="[0,9]{9}">
+            <label for="tel">Móvil o fijo</label>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,12 @@
+/*WWWWWWWWWWWWWWWWWWWWWW
+<<<<<<<  $MENUS  >>>>>>>
+WWWWWWWWWWWWWWWWWWWWWW*/
+.head__menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 300px;
+  flex-basis: 300px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }

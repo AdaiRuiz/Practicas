@@ -1,0 +1,52 @@
+/*WWWWWWWWWWWWWWWWWWWWWW
+<<<<<<<  $MENUS  >>>>>>>
+WWWWWWWWWWWWWWWWWWWWWW*/
+
+// Check Box
+#activar{
+    display: none;
+}
+
+// When Ckeck Box is checked
+#activar:checked ~ .head__menu__list{
+    display: block;
+}
+
+// Justify Icon
+.inputlabel{
+    font-size: 2rem;
+    @include responsive ($tablet){
+        display: none;
+    }
+}
+
+// Menu Header 
+.head__menu{
+    // Smartphone
+    @include responsive ($smart){
+        text-align: center;
+    }
+    // tablet
+    @include responsive ($tablet){
+        text-align: left;
+    }
+}
+// LIST NAVEGATOR
+.head__menu__list{
+    width: 300px;
+    margin: 20px;
+    justify-content: space-between;
+
+    // Smartphone device
+    @include responsive ($smart) {
+        display: none;
+    }
+
+    // Desktop Device
+    @include responsive ($tablet){
+        display: flex; 
+    }
+    
+}
+
+

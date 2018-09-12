@@ -1,0 +1,12 @@
+/*WWWWWWWWWWWWWWWWWWWWWW
+<<<<<<< $IMAGENES >>>>>>
+WWWWWWWWWWWWWWWWWWWWWW*/
+
+.google-img{
+    max-width: 150px;
+
+    // Smartphone 
+    @include responsive ($smart){
+        max-width: 200px;
+    }
+}

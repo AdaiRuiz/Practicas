@@ -1,0 +1,325 @@
+/*WWWWWWWWWWWWWWWWWWWWWW
+<<<<<<< $LAYOUTS >>>>>>>
+WWWWWWWWWWWWWWWWWWWWWW*/
+
+// All cover
+html{
+    // Smartphone
+    @include responsive ($smart){
+        font-size: 20px;
+    }
+
+    // Tablet
+    @include responsive ($tablet){
+        font-size: 16px;
+    }
+
+    // Desktop
+    @include responsive ($desktop){
+        font-size: 14px;
+    }
+}
+
+// header
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @extend %max-width;
+
+    @include responsive ($smart){
+        flex-direction: column;
+    }
+
+    @include responsive ($tablet){
+        flex-direction: row;
+    }
+}
+
+// Footer
+footer{
+    background-color: gray;
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    // text
+    & .copy{
+        color: white;
+    }
+}
+
+// WMWMWMMWMWMWMWMWMMWMWMWMWMWMWMWMWMWMWMMWMWMWMWMMWMWMWMWMMWMWMWWMMMWMWW
+// _+*+_+*+_+*+_+*+_+*+ -->   PÁGINA DE INCIO   <-- +*+_+*+_+*+_+*+_+*+_
+// MWMWMWMWMWMWMWMMWMWMWWMMWMWMWMWMWMMWMWMWMMWMWMWMWMMWMWMWMWMWMWMWMMWMWW
+
+// --->  Section 01 - Mod 01 --> Image and Text  <---
+.mod01{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @extend %max-width;
+    // smartphone
+    @include responsive ($smart){
+        // width: fit-content;
+        text-align: center;
+    }
+}
+
+// Image with figcaption
+.mod01__imageAndText{
+    position: relative;
+    width: 50%;
+    min-width: 300px;
+    // Text Box
+    &__textbox{
+        position: absolute;
+        bottom: 50px;
+        text-align: center;
+        padding: 0 50px;
+        background-color: rgba($color: #000000, $alpha: .5);
+        // Text
+        &__text{
+            color: white;
+            line-height: 20px;
+        }
+    
+    }
+}
+
+
+// Text box
+.mod01__textBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    // text
+    &__parragraph{
+        flex-basis: 500px;
+        line-height: 20px;
+        text-align: justify;
+        text-align-last: center;
+    }
+    // Smartphone
+    @include responsive ($smart){
+        width: 100%;
+    }
+    // Tablet
+    @include responsive($tablet){
+        width: 50%,
+    }
+}
+
+
+// --->  Mod 02 - Galery (grid)
+.mod02{  
+    @extend %max-width;
+    margin: 80px auto;
+    // Smartphone
+    @include responsive ($smart){
+        display: block;
+    }
+    // Tablet and Desktop 
+    @include responsive ($tablet){
+        height: 100vh;
+        display: grid;
+        grid-gap: 10px;
+        grid-template: repeat(4,auto)/repeat(4,1fr);
+    }
+}
+
+// First Image
+.natur1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+    // Picture
+    &__pic{
+        // Image
+        &__image1{
+            width: 100%;
+        }
+    }
+}
+
+// Second Image
+.natur2{
+    grid-column: 3/5;
+    grid-row: 1/2;
+    // Picture
+    &__pic{
+        // Image
+        &__image2{
+            width: 100%;
+        }
+    }
+}
+
+// Trird Image
+.natur3{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    // Picture
+    &__pic{
+        // Image
+        &__image3{
+            width: 100%;
+        }
+    }
+}
+
+//Fourth Image
+.natur4{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    // Picture
+    &__pic{
+        // Image
+        &__image3{
+            width: 100%;
+        }
+    }
+}
+
+//Fifth Image
+.natur5{
+    grid-column: 1/2;
+    grid-row: 3/5;
+    // Picture
+    &__pic{
+        // Image
+        &__image5{
+            width: 100%;
+        }
+    }
+}
+
+//Sixth Image
+.natur6{
+    grid-column: 2/4;
+    grid-row: 3/5;
+    // Picture
+    &__pic{
+        // Image
+        &__image6{
+            width: 100%;
+        }
+    }
+}
+
+//Seventh Image
+.natur7{
+    grid-column: 4/5;
+    grid-row: 3/4;
+    // Picture
+    &__pic{
+        // Image
+        &__image7{
+            width: 100%;
+        }
+    }
+}
+
+//Eigth Image
+.natur8{
+    grid-column: 4/5;
+    grid-row: 4/5;
+    // Picture
+    &__pic{
+        // Image
+        &__image8{
+            width: 100%;
+        }
+    }
+}
+
+.natur1__pic, .natur2__pic, .natur3__pic, .natur4__pic, .natur5__pic, .natur6__pic, .natur7__pic, .natur8__pic{
+    margin: 10px 0;
+    // Smarthphone
+    @include responsive ($smart){
+        display: block;
+    }
+    // tablet
+    @include responsive ($tablet){
+        display: none;
+    }
+}
+
+// MWMWmWMWMWM --> With Cover ( Background Image)
+
+// First Image
+.natur1{
+    background-image: url(../img/Natur01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// Second Image
+.natur2{
+    background-image: url(../img/Natur05.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// Thrird Image
+.natur3{
+    background-image: url(../img/Natur04.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// Fourth Image
+.natur4{
+    background-image: url(../img/Natur07.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// Fifth Image
+.natur5{
+    background-image: url(../img/Natur09.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// Sixth Image
+.natur6{
+    background-image: url(../img/Natur08.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// Seventh Image
+.natur7{
+    background-image: url(../img/Natur06.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+// Eitght Image
+.natur8{
+    background-image: url(../img/Nartur03.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+// WMWMWMMWMWMWMWMWMMWMWMWMWMWMWMWMWMWMWMMWMWMWMWMMWMWMWMWMMWMWMWWMMMWMWWMW
+// _+*+_+*+_+*+_+*+_+*+ -->   PÁGINA DE CONTACTO   <-- +*+_+*+_+*+_+*+_+*+_
+// MWMWMWMWMWMWMWMMWMWMWWMMWMWMWMWMWMMWMWMWMMWMWMWMWMMWMWMWMWMWMWMWMMWMWWMW
+
+.contact{
+    @extend %max-width;
+
+    // Tittle
+    &__title{
+        font-size: 60px;
+    }
+}
