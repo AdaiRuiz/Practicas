@@ -1,0 +1,394 @@
+@charset "UTF-8";
+/* -------------------- */
+/* MINIMAL CSS RESET */
+/* -------------------- */
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+
+   v2.0 | 20110126
+
+   License: none (public domain)
+
+*/
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* ------------------------- */
+/* CSS RESET de Toni Ferrà */
+/* ------------------------- */
+/*WWWWWWWWWWWWWWWWWWWWWW
+         $VARIABLES
+WWWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWW
+<<<<< $TIPOGRAFIA >>>>>>
+WWWWWWWWWWWWWWWWWWWWWW*/
+html {
+  font-family: Arial, Helvetica, sans-serif; }
+
+/*WWWWWWWWWWWWWWWWWWWWWW
+         $MIXINS
+WWWWWWWWWWWWWWWWWWWWWW*/
+.head, .mod01, .mod02, .contact {
+  width: 90%;
+  margin: 40px auto; }
+
+/*WWWWWWWWWWWWWWWWWWWWWW
+<<<<<<< $BOTONES >>>>>>>
+WWWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWW
+<<<<<<<  $LINKS  >>>>>>>
+WWWWWWWWWWWWWWWWWWWWWW*/
+a {
+  text-decoration: none;
+  color: black; }
+
+a:hover {
+  color: gray;
+  text-decoration: underline; }
+
+/*WWWWWWWWWWWWWWWWWWWWWW
+<<<<<<<  $MENUS  >>>>>>>
+WWWWWWWWWWWWWWWWWWWWWW*/
+#activar {
+  display: none; }
+
+#activar:checked ~ .head__menu__list {
+  display: block; }
+
+.inputlabel {
+  font-size: 2rem; }
+  @media only screen and (min-width: 764px) {
+    .inputlabel {
+      display: none; } }
+
+@media only screen and (min-width: 320px) {
+  .head__menu {
+    text-align: center; } }
+
+@media only screen and (min-width: 764px) {
+  .head__menu {
+    text-align: left; } }
+
+.head__menu__list {
+  width: 300px;
+  margin: 20px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  @media only screen and (min-width: 320px) {
+    .head__menu__list {
+      display: none; } }
+  @media only screen and (min-width: 764px) {
+    .head__menu__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+
+/*WWWWWWWWWWWWWWWWWWWWWW
+<<<<< $FORMULARIOS >>>>>
+WWWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWW
+<<<<<<< $IMAGENES >>>>>>
+WWWWWWWWWWWWWWWWWWWWWW*/
+.google-img {
+  max-width: 150px; }
+  @media only screen and (min-width: 320px) {
+    .google-img {
+      max-width: 200px; } }
+
+/*WWWWWWWWWWWWWWWWWWWWWW
+<<<<<<<  $GRIDS  >>>>>>>
+WWWWWWWWWWWWWWWWWWWWWW*/
+/*WWWWWWWWWWWWWWWWWWWWWW
+<<<<<<< $LAYOUTS >>>>>>>
+WWWWWWWWWWWWWWWWWWWWWW*/
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: 20px; } }
+
+@media only screen and (min-width: 764px) {
+  html {
+    font-size: 16px; } }
+
+@media only screen and (min-width: 1366px) {
+  html {
+    font-size: 14px; } }
+
+.head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media only screen and (min-width: 320px) {
+    .head {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+  @media only screen and (min-width: 764px) {
+    .head {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row; } }
+
+footer {
+  background-color: gray;
+  text-align: center;
+  position: fixed;
+  width: 100vw;
+  bottom: 0; }
+  footer .copy {
+    color: white; }
+
+.mod01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @media only screen and (min-width: 320px) {
+    .mod01 {
+      text-align: center; } }
+
+.mod01__imageAndText {
+  position: relative;
+  width: 50%;
+  min-width: 300px; }
+  .mod01__imageAndText__textbox {
+    position: absolute;
+    bottom: 50px;
+    text-align: center;
+    padding: 0 50px;
+    background-color: rgba(0, 0, 0, 0.5); }
+    .mod01__imageAndText__textbox__text {
+      color: white;
+      line-height: 20px; }
+
+.mod01__textBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 40px; }
+  .mod01__textBox__parragraph {
+    -ms-flex-preferred-size: 500px;
+    flex-basis: 500px;
+    line-height: 20px;
+    text-align: justify;
+    text-align-last: center; }
+  @media only screen and (min-width: 320px) {
+    .mod01__textBox {
+      width: 100%; } }
+  @media only screen and (min-width: 764px) {
+    .mod01__textBox {
+      width: 50%; } }
+
+.mod02 {
+  margin: 80px auto; }
+  @media only screen and (min-width: 320px) {
+    .mod02 {
+      display: block; } }
+  @media only screen and (min-width: 764px) {
+    .mod02 {
+      height: 100vh;
+      display: grid;
+      grid-gap: 10px;
+      grid-template: repeat(4, auto)/repeat(4, 1fr); } }
+
+.natur1 {
+  grid-column: 1/3;
+  grid-row: 1/3; }
+  .natur1__pic__image1 {
+    width: 100%; }
+
+.natur2 {
+  grid-column: 3/5;
+  grid-row: 1/2; }
+  .natur2__pic__image2 {
+    width: 100%; }
+
+.natur3 {
+  grid-column: 3/4;
+  grid-row: 2/3; }
+  .natur3__pic__image3 {
+    width: 100%; }
+
+.natur4 {
+  grid-column: 4/5;
+  grid-row: 2/3; }
+  .natur4__pic__image3 {
+    width: 100%; }
+
+.natur5 {
+  grid-column: 1/2;
+  grid-row: 3/5; }
+  .natur5__pic__image5 {
+    width: 100%; }
+
+.natur6 {
+  grid-column: 2/4;
+  grid-row: 3/5; }
+  .natur6__pic__image6 {
+    width: 100%; }
+
+.natur7 {
+  grid-column: 4/5;
+  grid-row: 3/4; }
+  .natur7__pic__image7 {
+    width: 100%; }
+
+.natur8 {
+  grid-column: 4/5;
+  grid-row: 4/5; }
+  .natur8__pic__image8 {
+    width: 100%; }
+
+.natur1__pic, .natur2__pic, .natur3__pic, .natur4__pic, .natur5__pic, .natur6__pic, .natur7__pic, .natur8__pic {
+  margin: 10px 0; }
+  @media only screen and (min-width: 320px) {
+    .natur1__pic, .natur2__pic, .natur3__pic, .natur4__pic, .natur5__pic, .natur6__pic, .natur7__pic, .natur8__pic {
+      display: block; } }
+  @media only screen and (min-width: 764px) {
+    .natur1__pic, .natur2__pic, .natur3__pic, .natur4__pic, .natur5__pic, .natur6__pic, .natur7__pic, .natur8__pic {
+      display: none; } }
+
+.natur1 {
+  background-image: url(../img/Natur01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.natur2 {
+  background-image: url(../img/Natur05.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.natur3 {
+  background-image: url(../img/Natur04.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.natur4 {
+  background-image: url(../img/Natur07.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.natur5 {
+  background-image: url(../img/Natur09.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.natur6 {
+  background-image: url(../img/Natur08.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.natur7 {
+  background-image: url(../img/Natur06.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.natur8 {
+  background-image: url(../img/Nartur03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.contact__title {
+  font-size: 60px; }
